@@ -3,10 +3,12 @@
 body {
     margin: 0;
     font-family: Arial, sans-serif;
+    background-color: #F0EAD8;
+    color:#212529
 }
 
 .toplinks {
-    background-color: #212529;
+    background-color: #4C0000;
     padding: 15px;
 }
 
