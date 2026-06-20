@@ -3,30 +3,26 @@
 body {
     margin: 0;
     font-family: Arial, sans-serif;
-    background-color: #F0EAD8; /* Almond Cream background for the whole site */
+    background-color: #F0EAD8; 
     color: #212529;
 }
-
-/* Mahogany Jam top bar */
 .toplinks {
     background-color: #4C0000; 
     padding: 15px;
 }
-
 .toplinks a {
-    color: #F1EEE6; /* Coconut Milk text for links */
+    color: #F1EEE6; 
     text-decoration: none;
     margin-right: 15px;
 }
 
 .toplinks a:hover {
-    color: #ACB090; /* Meadow Mist accent on hover */
+    color: #ACB090; 
 }
 
-/* Banner section styled with Mahogany Jam */
 .banner {
     background-color: #4C0000;
-    color: #F1EEE6; /* Coconut Milk text */
+    color: #F1EEE6; 
     text-align: center;
     padding: 50px 20px;
 }
@@ -49,12 +45,10 @@ body {
     min-width: 300px;
 }
 
-/* Titles styled using Mahogany Jam */
 h2, h5, dt {
     color: #4C0000;
 }
 
-/* Sidebar styled with Coconut Milk background */
 .sidebar {
     background-color: #F1EEE6;
     flex: 1 1 30%;
