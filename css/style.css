@@ -1,0 +1,58 @@
+/* Custom Style Blueprint matching your classroom templates */
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.toplinks {
+    background-color: #212529;
+    padding: 15px;
+}
+
+.toplinks a {
+    color: white;
+    text-decoration: none;
+    margin-right: 15px;
+}
+
+.toplinks a:hover {
+    color: #ffc107;
+}
+
+.banner {
+    background-color: #ffc107;
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.banner h1 {
+    margin: 0;
+}
+
+.row {
+    padding: 30px;
+    margin: 0;
+}
+
+.content {
+    padding-right: 20px;
+}
+
+.sidebar {
+    background-color: #f8f9fa;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+.highlight {
+    background-color: yellow;
+    font-weight: bold;
+}
+
+.footer {
+    background-color: #212529;
+    color: white;
+    text-align: center;
+    padding: 15px;
+}
