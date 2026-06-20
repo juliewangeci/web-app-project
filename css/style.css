@@ -1,60 +1,151 @@
-/* Custom Style Blueprint matching your classroom templates */
+/* Custom Style Blueprint - SugarGrain Bakery Palette */
 
 body {
     margin: 0;
     font-family: Arial, sans-serif;
-    background-color: #F0EAD8;
-    color:#212529
+    background-color: #F0EAD8; /* Almond Cream background for the whole site */
+    color: #212529;
 }
 
+/* Mahogany Jam top bar */
 .toplinks {
-    background-color: #4C0000;
+    background-color: #4C0000; 
     padding: 15px;
 }
 
 .toplinks a {
-    color: #F1EEE6; 
+    color: #F1EEE6; /* Coconut Milk text for links */
     text-decoration: none;
     margin-right: 15px;
 }
 
 .toplinks a:hover {
-    color: #ffc107;
+    color: #ACB090; /* Meadow Mist accent on hover */
 }
 
+/* Banner section styled with Mahogany Jam */
 .banner {
-    background-color: #ffc107;
+    background-color: #4C0000;
+    color: #F1EEE6; /* Coconut Milk text */
     text-align: center;
     padding: 50px 20px;
 }
 
 .banner h1 {
     margin: 0;
+    font-size: 2.5rem;
 }
 
 .row {
     padding: 30px;
     margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
 }
 
 .content {
-    padding-right: 20px;
+    flex: 1 1 65%;
+    min-width: 300px;
 }
 
+/* Titles styled using Mahogany Jam */
+h2, h5, dt {
+    color: #4C0000;
+}
+
+/* Sidebar styled with Coconut Milk background */
 .sidebar {
-    background-color: #f8f9fa;
+    background-color: #F1EEE6;
+    flex: 1 1 30%;
+    min-width: 250px;
     padding: 20px;
     border-radius: 5px;
+    height: fit-content;
 }
 
 .highlight {
-    background-color: yellow;
+    background-color: #ACB090; 
+    color: #4C0000;
     font-weight: bold;
+    padding: 2px 5px;
+    border-radius: 3px;
+}
+
+.team_img {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin: 20px 0;
+}
+
+.team_member {
+    flex: 1 1 45%;
+    padding: 15px;
+    border: 1px solid #ACB090; 
+    border-radius: 5px;
+    background-color: #ffffff;
+}
+
+.gallery-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-top: 15px;
+}
+
+.gallery-item {
+    flex: 1 1 45%;
+    text-align: center;
+}
+
+.gallery-item img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 5px;
+    border: 1px solid #ACB090;
+}
+
+.bakery-form {
+    border: 1px solid #ACB090;
+    padding: 20px;
+    border-radius: 5px;
+    background-color: #ffffff;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #4C0000;
+}
+
+.form-group input, .form-group textarea {
+    width: 100%;
+    padding: 8px;
+    box-sizing: border-box;
+    border: 1px solid #ACB090;
+    border-radius: 4px;
+}
+
+.bakery-form button {
+    background-color: #4C0000;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
 }
 
 .footer {
-    background-color: #212529;
-    color: white;
+    background-color: #4C0000;
+    color: #F1EEE6;
     text-align: center;
     padding: 15px;
+    margin-top: auto;
 }
