@@ -162,3 +162,59 @@ h2, h5, dt {
     background-color: #ffffff ;
     color: #4C0000;
 }
+/* ==========================================================================
+   Menu Page Card Grid Layout
+   ========================================================================== */
+
+/* The main container holding all your menu items */
+.menu-grid {
+    display: flex;
+    flex-wrap: wrap;       /* Lets cards wrap to the next line if screen is narrow */
+    gap: 25px;             /* Clean breathing room between cards */
+    margin-top: 20px;
+}
+
+/* Individual vertical product card styling */
+.menu-card {
+    display: flex;
+    flex-direction: column; /* Stack image on top, text details on bottom */
+    background-color: #ffffff;
+    border: 1px solid #ACB090;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+    flex: 1 1 calc(33.333% - 25px); /* Perfectly sizes 3 items side-by-side */
+    min-width: 250px;       /* Keeps cards from squishing too small on mobile */
+}
+
+/* Forces menu item images to be round/square banners at the top of the card */
+.menu-card img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;     /* Cleanly crops image without distorting it */
+}
+
+/* Padding inside the information area */
+.menu-card-info {
+    padding: 20px;
+}
+
+.menu-card-info h3 {
+    margin: 0 0 5px 0;
+    color: #4C0000 ; /* Maroon title */
+    font-size: 1.3rem;
+}
+
+.menu-price {
+    font-weight: bold;
+    color: #ACB090;          /* Accent color for pricing */
+    margin-bottom: 12px;
+    font-size: 1.1rem;
+}
+
+.menu-card-info p {
+    margin: 0;
+    font-size: 0.95rem;
+    color: #212529;
+    line-height: 1.4;
+}
