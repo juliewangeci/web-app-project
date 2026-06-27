@@ -4,10 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Our Menu | SugarGrain Bakery</title>
+    <!-- Bootstrap Web Link -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/style.css">
-    </head>
+    <!-- Your custom bakery styles -->
+    <link rel="stylesheet" href="css/style.css"> 
+</head>
 <body>
+
 <div class="toplinks">
         <a href="index.html">Home</a>
         <a href="about.html">About Us</a>
@@ -16,24 +19,51 @@
         <a href="reviews.html">Reviews</a>
         <a href="contact.html">Contact Us</a>
         <a href="faq.html">FAQs</a>
-        </div>
+</div>
+
 <div class="banner">
     <h1>Our Daily Artisanal Menu</h1>
 </div>
+
 <div class="row">
     <div class="content">
         <h2>Freshly Baked Daily</h2>
-        <p>All our items are prepared fresh every morning using local, organic ingredients. Stop by early for the best selection!</p>
-        <dl>
-            <dt>Signature Wild Sourdough</dt>
-            <dd>Naturally leavened bread with a crisp crust and chewy interior. Made with 100% unbleached flour.</dd>
+        <p>All our items are prepared fresh every morning using local, organic ingredients.</p>
+
+        <!-- VISUAL MENU GRID -->
+        <div class="menu-grid">
             
-            <dt>Flaky Butter Croissants</dt>
-            <dd>Classic French-style pastry laminated with premium local pasture-raised butter.</dd>
-            
-            <dt>Seasonal Fruit Tarts</dt>
-            <dd>Shortcrust pastry shells filled with vanilla bean pastry cream and topped with fresh berries.</dd>
-        </dl>
+            <!-- Item 1 -->
+            <div class="menu-card">
+                <img src="images/sourdough.jpeg" alt="Signature Wild Sourdough">
+                <div class="menu-card-info">
+                    <h3>Signature Wild Sourdough</h3>
+                    <p class="menu-price">Ksh 450</p>
+                    <p>Naturally leavened bread with a crisp crust and chewy interior. Made with 100% unbleached flour.</p>
+                </div>
+            </div>
+
+            <!-- Item 2 -->
+            <div class="menu-card">
+                <img src="images/bakery.jpg" alt="Flaky Butter Croissants">
+                <div class="menu-card-info">
+                    <h3>Flaky Butter Croissants</h3>
+                    <p class="menu-price">Ksh 250</p>
+                    <p>Classic French-style pastry laminated with premium local pasture-raised butter.</p>
+                </div>
+            </div>
+
+            <!-- Item 3 -->
+            <div class="menu-card">
+                <img src="images/bakery.jpg" alt="Seasonal Fruit Tarts">
+                <div class="menu-card-info">
+                    <h3>Seasonal Fruit Tarts</h3>
+                    <p class="menu-price">Ksh 350</p>
+                    <p>Shortcrust pastry shells filled with vanilla bean pastry cream and topped with fresh berries.</p>
+                </div>
+            </div>
+
+        </div>
     </div>
     
     <div class="sidebar">
@@ -41,6 +71,7 @@
         <p>Need custom cakes or large catering platters? Head over to our <a href="contact.html">Contact Us</a> page to submit an inquiry at least 48 hours in advance.</p>
     </div>
 </div>
+
 <div class="footer">
     &#169; 2026 SugarGrain Bakery. All rights reserved.
 </div>
