@@ -71,7 +71,7 @@ h2, h5, dt {
 }
 
 /* ==========================================================================
-   Hero Landing Section (Artcaffè Style)
+   Hero Landing Section 
    ========================================================================== */
 
 .hero-section {
@@ -217,4 +217,32 @@ h2, h5, dt {
     font-size: 0.95rem;
     color: #212529;
     line-height: 1.4;
+}
+/* ==========================================================================
+   Gallery Page Layout (Two Side-by-Side Images)
+   ========================================================================== */
+
+/* The main container holding all my gallery items */
+.gallery-grid {
+    display: flex;
+    flex-wrap: wrap;       /* Allows items to move to a new row cleanly */
+    gap: 20px;             /* Creates breathing room between your images */
+    margin-top: 15px;
+}
+
+/* Sizing individual gallery items to fit 2 per row */
+.gallery-item {
+    flex: 1 1 calc(50% - 20px); /* Splits the space down the middle perfectly */
+    min-width: 280px;           /* Prevents images from getting crushed on mobile */
+    text-align: center;
+}
+
+/* Styling the image blocks inside the gallery */
+.gallery-item img {
+    width: 100%;
+    height: 350px;        
+    object-fit: cover;     
+    border-radius: 8px;    
+    border: 1px solid #ACB090;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
 }
