@@ -246,3 +246,25 @@ h2, h5, dt {
     border: 1px solid #ACB090;
     box-shadow: 0 4px 6px rgba(0,0,0,0.05);
 }
+/* ==========================================================================
+   Custom Media Query for Mobile Responsiveness
+   ========================================================================== */
+@media (max-width: 576px) {
+    .toplinks {
+        display: flex;
+        flex-direction: column; /* Stacks navigation links vertically on mobile */
+        gap: 10px;
+        padding: 20px 15px;
+    }
+    
+    .toplinks a {
+        margin-right: 0;
+        display: block;
+        border-bottom: 1px solid rgba(241, 238, 230, 0.1);
+        padding-bottom: 8px;
+    }
+    
+    .hero-content h1 {
+        font-size: 2rem !important; /* Shrinks the massive title so it fits mobile screens */
+    }
+}
