@@ -1,98 +1,164 @@
+/* Custom Style Blueprint - SugarGrain Bakery Palette */
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #F0EAD8 ; /* Forces cream background */
+    color: #212529;
+}
+
+.toplinks {
+    background-color: #4C0000 ; /* Forces maroon header */
+    padding: 15px;
+}
+
+.toplinks a {
+    color: #F1EEE6 ; 
+    text-decoration: none;
+    margin-right: 15px;
+}
+
+.toplinks a:hover {
+    color: #ACB090; 
+}
+.toplinks {
+    background-color: #4C0000 ; 
+    padding: 15px;
+    text-align: center; /* this line centers the links */
+}
+
+.row {
+    padding: 30px;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    background-color: #F0EAD8;
+}
+
+.content {
+    flex: 1 1 65%;
+    min-width: 300px;
+}
+
+h2, h5, dt {
+    color: #4C0000 ;
+}
+
+.sidebar {
+    background-color: #F1EEE6 ;
+    flex: 1 1 30%;
+    min-width: 250px;
+    padding: 20px;
+    border-radius: 5px;
+    height: fit-content;
+}
+
+.highlight {
+    background-color: #ACB090; 
+    color: #4C0000;
+    font-weight: bold;
+    padding: 2px 5px;
+    border-radius: 3px;
+}
+
+.footer {
+    background-color: #4C0000 ;
+    color: #F1EEE6 ;
+    text-align: center;
+    padding: 15px;
+    width: 100%;
+}
+
 /* ==========================================================================
-   Inspired by Artcaffè Layout
+   Hero Landing Section (Artcaffè Style)
    ========================================================================== */
 
 .hero-section {
     position: relative;
     width: 100%;
-    min-height: 80vh; /* Takes up 80% of the screen height */
+    min-height: 75vh;
     display: flex;
     align-items: center;
     justify-content: center;
     text-align: center;
-    background-image: url('../images/bakery.jpg'); 
+    /* Looks for bakery.jpg inside your images folder */
+    background-image: url('../images/bakery.jpg') ; 
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    padding: 40px 20px;
+    padding: 60px 20px;
 }
 
-/* Dark tint overlay layer to make white text perfectly readable */
 .hero-overlay {
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.55); /* 55% darkness overlay */
+    background-color: rgba(0, 0, 0, 0.6) ; /* Semi-transparent dark overlay */
     z-index: 1;
 }
 
-/* Brings text content on top of the dark tint */
 .hero-content {
     position: relative;
     z-index: 2;
     max-width: 900px;
-    color: #F1EEE6; /* Matching cream text */
-    padding: 0 15px;
+    color: #F1EEE6 ;
 }
 
 .hero-content h1 {
-    font-size: 3rem;
+    font-size: 2.8rem;
     font-weight: 800;
-    letter-spacing: 2px;
-    line-height: 1.2;
+    letter-spacing: 1.5px;
+    line-height: 1.3;
     margin-bottom: 20px;
-    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5); /* Crisp shadow for visibility */
+    color: #F1EEE6 ;
 }
 
 .hero-content p {
-    font-size: 1.25rem;
-    margin-bottom: 35px;
-    font-weight: 300;
-    letter-spacing: 0.5px;
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+    color: #F1EEE6;
 }
 
-/* Elegant Pill-Shaped Action Buttons */
 .hero-buttons {
     display: flex;
-    gap: 20px;
+    gap: 15px;
     justify-content: center;
     flex-wrap: wrap;
 }
 
 .btn-hero {
     display: inline-block;
-    padding: 14px 35px;
-    font-size: 0.95rem;
+    padding: 12px 30px;
+    font-size: 0.9rem;
     font-weight: bold;
-    letter-spacing: 1.5px;
+    letter-spacing: 1px;
     text-decoration: none;
-    border-radius: 50px; /* Forces round edges like the reference image */
+    border-radius: 50px;
     transition: all 0.3s ease;
 }
 
-/* Solid Light Button */
 .btn-light-hero {
-    background-color: #ffffff;
-    color: #4C0000; /* Maroon text inside */
+    background-color: #ffffff ;
+    color: #4C0000 ;
     border: 2px solid #ffffff;
 }
 
 .btn-light-hero:hover {
-    background-color: #4C0000;
-    color: #ffffff;
-    border-color: #4C0000;
+    background-color: #4C0000 ;
+    color: #ffffff ;
+    border-color: #4C0000 ;
 }
 
-/* Transparent Outline Button */
 .btn-outline-hero {
-    background-color: transparent;
-    color: #ffffff;
+    background-color: transparent ;
+    color: #ffffff ;
     border: 2px solid #ffffff;
 }
 
 .btn-outline-hero:hover {
-    background-color: #ffffff;
+    background-color: #ffffff ;
     color: #4C0000;
 }
