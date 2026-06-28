@@ -268,3 +268,32 @@ h2, h5, dt {
         font-size: 2rem !important; /* Shrinks the massive title so it fits mobile screens */
     }
 }
+/* ==========================================================================
+   Interactive Dark Mode Theme Overrides
+   ========================================================================== */
+body.dark-mode {
+    background-color: #1a1a1a !important;
+    color: #f1eee6 !important;
+}
+
+body.dark-mode .row {
+    background-color: #1a1a1a !important;
+}
+
+body.dark-mode .sidebar {
+    background-color: #2d2d2d !important;
+    color: #f1eee6 !important;
+}
+
+body.dark-mode .menu-card, 
+body.dark-mode .team_member {
+    background-color: #2d2d2d !important;
+    color: #f1eee6 !important;
+    border-color: #4C0000 !important;
+}
+
+body.dark-mode p, 
+body.dark-mode li, 
+body.dark-mode dd {
+    color: #e0e0e0 !important;
+}

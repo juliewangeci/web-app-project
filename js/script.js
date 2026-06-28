@@ -29,3 +29,21 @@ document.addEventListener("DOMContentLoaded", function () {
         });
     }
 });
+// Interactive Feature 2: Dark/Light Mode Theme Toggle
+const themeToggleBtn = document.getElementById('theme-toggle');
+
+if (themeToggleBtn) {
+    themeToggleBtn.addEventListener('click', function() {
+        // Toggle the .dark-mode class on the body tag
+        document.body.classList.toggle('dark-mode');
+        
+        // Dynamically update the button text based on the active mode
+        if (document.body.classList.contains('dark-mode')) {
+            themeToggleBtn.innerHTML = "☀️ Light Mode";
+            themeToggleBtn.className = "btn btn-sm btn-outline-light";
+        } else {
+            themeToggleBtn.innerHTML = "🌙 Dark Mode";
+            themeToggleBtn.className = "btn btn-sm btn-outline-dark";
+        }
+    });
+}
