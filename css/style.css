@@ -82,7 +82,7 @@ h2, h5, dt {
     align-items: center;
     justify-content: center;
     text-align: center;
-    /* Looks for bakery.jpg inside your images folder */
+    /* Looks for bakery.jpg inside  images folder */
     background-image: url('../images/bakery.jpg') ; 
     background-size: cover;
     background-position: center;
@@ -166,7 +166,7 @@ h2, h5, dt {
    Menu Page Card Grid Layout
    ========================================================================== */
 
-/* The main container holding all your menu items */
+/* The main container holding all my menu items */
 .menu-grid {
     display: flex;
     flex-wrap: wrap;       /* Lets cards wrap to the next line if screen is narrow */

@@ -25,10 +25,10 @@ document.addEventListener("DOMContentLoaded", function () {
                 return;
             }
 
-            // Stops the default form redirect so our script handles the completion flow
+            // Stops the default form redirect so script handles the completion flow
             event.preventDefault();
 
-            // Success confirmation popup with your thumbs-up emoji!
+            // Success confirmation popup with the thumbs-up emoji!
             alert("order received 👍🏾");
 
             // Resets the input fields neatly back to empty
