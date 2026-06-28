@@ -25,21 +25,21 @@
         <h2>Custom Cake Request Form</h2>
         <p>Fill out the form details below to request custom party catering or targeted custom birthday cake orders.</p>
         
-        <form class="my-3 border p-4 rounded bg-white">
-            <div class="mb-3">
-                <label class="form-label">Full Name</label>
-                <input type="text" class="form-control" required>
-            </div>
-            <div class="mb-3">
-                <label class="form-label">Email Address</label>
-                <input type="email" class="form-control" required>
-            </div>
-            <div class="mb-3">
-                <label class="form-label">Order Instructions</label>
-                <textarea class="form-control" rows="4" required></textarea>
-            </div>
-            <button type="submit" class="btn btn-dark">Submit Order</button>
-        </form>
+        <form id="cake-order-form" class="my-3 border p-4 rounded bg-white">
+    <div class="mb-3">
+        <label class="form-label">Full Name</label>
+        <input type="text" id="full-name" class="form-control" required>
+    </div>
+    <div class="mb-3">
+        <label class="form-label">Email Address</label>
+        <input type="email" id="email-address" class="form-control" required>
+    </div>
+    <div class="mb-3">
+        <label class="form-label">Order Instructions</label>
+        <textarea id="order-instructions" class="form-control" rows="4" required></textarea>
+    </div>
+    <button type="submit" class="btn btn-dark">Submit Order</button>
+</form>
     </div>
     
     <div class="sidebar col-12 col-md-4">

@@ -1,14 +1,15 @@
 // JavaScript for SugarGrain Bakery Project
 
 document.addEventListener("DOMContentLoaded", function () {
-    // Looks for your bakery form on the contact page
-    const form = document.querySelector(".bakery-form");
+    // Looks for your updated bakery form using its explicit ID
+    const form = document.getElementById("cake-order-form");
     
     if (form) {
         form.addEventListener("submit", function (event) {
-            const nameInput = form.querySelector("input[type='text']");
-            const emailInput = form.querySelector("input[type='email']");
-            const messageInput = form.querySelector("textarea");
+            // Target the input elements using their specific IDs
+            const nameInput = document.getElementById("full-name");
+            const emailInput = document.getElementById("email-address");
+            const messageInput = document.getElementById("order-instructions");
 
             // 1. Make sure required fields aren't completely empty
             if (nameInput.value.trim() === "" || messageInput.value.trim() === "") {
@@ -24,11 +25,18 @@ document.addEventListener("DOMContentLoaded", function () {
                 return;
             }
 
-            // Success confirmation popup
-            alert("Thank you! Your inquiry has been sent to SugarGrain Bakery successfully.");
+            // Stops the default form redirect so our script handles the completion flow
+            event.preventDefault();
+
+            // Success confirmation popup with your thumbs-up emoji!
+            alert("order received 👍🏾");
+
+            // Resets the input fields neatly back to empty
+            form.reset();
         });
     }
 });
+
 // Interactive Feature 2: Dark/Light Mode Theme Toggle
 const themeToggleBtn = document.getElementById('theme-toggle');
 
